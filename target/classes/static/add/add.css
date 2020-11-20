@@ -1,0 +1,50 @@
+.header{
+    padding: 35px  0px 40px 150px;
+    background-color: rgb(232, 236, 239);
+}
+h1{
+    font-size: 43px;
+    font-weight: 270;
+}
+.body{
+    border: none;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+.td-left{
+    padding: 20px 300px 15px 7px;
+}
+.td-right{
+    padding: ;
+}
+
+table, tbody, tr, td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(210, 210, 210);
+    border-collapse: collapse;
+}
+input{
+    background-color: rgb(233, 239, 253);
+    border: none;
+    padding: 10px 600px 10px 5px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.save{
+    background-color: blue;
+    color: white;
+    padding: 7px;
+    margin-right: 10px;
+}
+button{
+    background-color: rgb(233, 239, 253);
+    outline: none;
+    border: none;
+    padding: 7px;
+}

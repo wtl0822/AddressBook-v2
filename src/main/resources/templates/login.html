@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="../static/login/login.css">
+    <script src="../static/login/login.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="title">
+        <h1 style="text-align: center;color: white">通讯录</h1>
+        <p style="text-align: center;color: white">AddressList Book</p>
+    </div>
+    <div class="window">
+        <div class="window-item">
+            <div style="margin: auto">
+                <div style="margin: auto">
+                    <img class="logo" src="../static/login/logo.png" alt="0XNrz4.png" border="0"/>
+                </div>
+                <p style="text-align:center">Please sign in</p>
+            </div>
+            <div class="inputInfo">
+                <form action="/checklogin" method="post" th:object="${user}">
+                    <label>账号：<input id="id-urn" th:field="*{username}" placeholder="admin" type="text" name="username" value="admin" required><br>
+                    </label>
+                    <label>密码：<input id="id-pwd" th:field="*{password}" placeholder="123456" type="password" name="password" value="123456" required><br>
+                    </label>
+                    <span class="alert" th:if="${user.message}" th:text="${user.message}"></span>
+                    <input type="submit" value="登录">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

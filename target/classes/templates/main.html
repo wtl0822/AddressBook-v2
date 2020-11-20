@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/main/main.css">
+    <script src="../static/main/main.js"></script>
+</head>
+<body>
+<div class="header">
+    <div>
+        <h1>通讯录</h1>
+        <p>作者：wtl</p>
+    </div>
+</div>
+<div>
+    <div class="search">
+        <input type="text" value="姓名">
+        <input type="text">
+        <button>查询</button>
+    </div>
+    <div class="div-table">
+        <table class="tb">
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>电话</td>
+                <td>邮箱</td>
+                <td>地址</td>
+                <td>QQ</td>
+                <td>
+                    <button class="add-btn" onclick="add()">添加</button>
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="info:${session.book.getBookinfo()}">
+                    <td th:text="${info.getContactname()}"></td>
+                    <td th:text="${info.getTelephone()}"></td>
+                    <td th:text="${info.getEmail()}"></td>
+                    <td th:text="${info.getAddress()}"></td>
+                    <td th:text="${info.getQqNum()}"></td>
+                    <td>
+                        <button class="edit" onclick="edit(this)">编辑</button>
+                        <button class="delete" onclick="del(this)">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

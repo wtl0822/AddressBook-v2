@@ -1,0 +1,59 @@
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    margin: auto;
+}
+.title{
+    margin: auto;
+}
+.window{
+    opacity: 0.8;
+    background-color: white;
+    padding: 100px;
+    margin-top: 100px;
+    border-radius: 8%;
+    box-shadow: 0px 0px 100px 100px aliceblue inset;
+    -webkit-animation: a1 3s;
+}
+@keyframes a1
+{   0%{opacity: 0.0;}
+    100%{opacity: 0.8;}
+}
+
+.alert
+{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(243, 45, 46);
+}
+
+.logo{
+    display: inline;
+    margin: auto;
+    height: 80px;
+    width: 120px;
+}
+.inputInfo{
+    margin: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    margin: 10px 0;
+}
+
+body
+{
+    background-image: url("background-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

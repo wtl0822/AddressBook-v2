@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.wtl.hw4.Hw4ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.64 s - in com.wtl.hw4.Hw4ApplicationTests

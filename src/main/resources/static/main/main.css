@@ -1,0 +1,64 @@
+.header{
+    padding: 35px  0px 40px 150px;
+    background-color: rgb(232, 236, 239);
+}
+h1{
+    font-size: 43px;
+    font-weight: 270;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.add-btn{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;update
+}
+button{
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+div > input:first-of-type {
+    width: 70px;
+}
+div > input:nth-of-type(2) {
+
+}
+div > input {
+    margin-right: 10px;
+}
+div > button{
+    background-color: blue;
+    color: white;
+}
+.div-table{
+    display: flex;
+    justify-content: center;
+}
+
+table, thead, tbody, tr, td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-collapse: collapse;
+}
+td{
+    padding: 9px 120px 15px 7px;
+}
+
+.edit{
+    background-color: rgb(22, 162, 183);
+    color: white;
+}
+.delete{
+    background-color: red;
+    color: white;
+}
+button{
+    border-style: solid;
+    border-radius: 15%;
+}
